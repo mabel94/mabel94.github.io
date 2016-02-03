@@ -190,6 +190,25 @@ h6, .h6 {
   margin-bottom: 60px;
 
 }
+.blog-img{
+margin:10px;
+background-color: #CCC;
+float: right;
+max-width: 40%;
+min-width: 200px;
+}
+.blog-img img{
+    width:100%;
+    padding:10px;
+}
+.blog-img p{
+    padding: 13px;
+    text-align: center;
+    font-size: 85%;
+    margin: 0px;
+}
+
+
 .blog-post-title {
   margin-bottom: 5px;
   font-size: 40px;
@@ -214,3 +233,5 @@ h6, .h6 {
 .blog-footer p:last-child {
   margin-bottom: 0;
 }
+
+
