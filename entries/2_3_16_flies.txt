@@ -1,0 +1,19 @@
+Drosophila
+
+
+Today was the first day in my genetics lab.  Normally this would be quite exciting, if the first 6 weeks wouldn't be spendt breeding and counting fruit flies.
+The way you do this is rather prone to error.  You take a bottle with cotton in the bottom and then drop some ether in it.  Then, stick a test-tube funnel with holes in the bottom into the bottom, and dump another bottle of fruit flies into it. The fruit flies start to sleep when they take in the ether fumes.
+
+However, put too little ether in and you're going to get flies all over the room and they will head straight for the coffee you so dumbly brought into the lab. Put too little in and they will die, or worse, get sterilized, which you won't figure out until the next week when you go into the lab and notice that none of your flies laid eggs.  
+
+About two minutes after you etherize them, they start getting fidgety and move around.  You have two options: risk them getting into your honey-soaked coffee when they wake up completely and fly away, or etherize them again. 
+
+Then, you stick them under a gross microscope (gross as in has a low magnification, not gross as in digusting, although with flies crawling around them, they are rather disgusting), and observe them.  You need to check their eyes, their thorax, their body bristles, and their wings for mutations.
+
+So far, this seems like it is going to be a rather tedious lab, full of squinted eyes and dead fly bodies getting all over my backpack and in my hair. 
+
+They say that one of the early influential geneticists who worked with fruit flies, I believe it was <a href="https://en.wikipedia.org/wiki/Thomas_Hunt_Morgan">Thomas Hunt Morgan</a>, had piles of dead flies all over his desk in his office.
+
+We'll see where this class ends up going.  Not much here in the way of computational bio, at least not for a while.  All I need right now seems to be copious amounts of coffee, a diagram of a wild-type fly, and the ability to count.  Intro genetics lab.
+
+
