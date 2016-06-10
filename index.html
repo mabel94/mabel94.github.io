@@ -20,6 +20,7 @@
     <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
     <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
     <script src="../../assets/js/ie-emulation-modes-warning.js"></script>
+    <script src="js/blog.js"></script>
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
@@ -29,28 +30,12 @@
   </head>
 
   <body>
+    <div id="masthead"></div>
+    <div id="nav"></div>
 
-<!-- gray white candy apple yellow -->
-    <div class="container blog-masthead">        <div class="blog-masthead-insert">
-            <h1 class="blog-title"> Fabled Raven</h1>
-        
-            <p class="lead blog-description">Living in a mostly harmless world</p>
-            
-        </div>
-    </div>
+    <script>get_masthead(); get_nav("home");</script>
+    <!-- gray white candy apple yellow -->
 
-        <nav class="blog-nav">
-                <div class="container">
-                  <a class="blog-nav-item active" href="#">Home</a>
-                  <a class="blog-nav-item" href="#">Coding Projects (soon!)</a>
-                  <a class="blog-nav-item" href="#">Social Commentary (soon!)</a>
-                  <a class="blog-nav-item" href="#">Books and Media (soon!)</a>
-                  <a class="blog-nav-item" href="til.html">Things I like</a>
-                  <a class="blog-nav-item" href="tih.html">Things I hate</a>
-                  <a class="blog-nav-item" href="contact.html">Contact</a>
-                </div>
-
-        </nav>
     <div class="container">
 
       <div class="row">
@@ -113,39 +98,17 @@ We'll see where this class ends up going.  Not much here in the way of computati
   </p>
  </div>
 
-        </div><!-- /.blog-main -->
-
-
- <div class="col-sm-3 col-sm-offset-1 blog-sidebar">
-          <div class="sidebar-module sidebar-module-inset">
-            <h4>About This Blog</h4>
-            <p>Documenting my journey through life with computer science and the love of all things controversial</p>
-          </div>
-      
-          <div class="sidebar-module">
-            <h4>Elsewhere</h4>
-            <ol class="list-unstyled">
-              <li><a href="#">Bitbucket</a></li>
-              <li><a href="#">Twitter</a></li>
-              <li><a href="./facebook.html">Facebook</a></li>
-            </ol>
-            <img style="margin-top:10px" src="http://static.fsf.org/nosvn/associate/crm/1090777.png"/>
-          </div>
-        </div><!-- /.blog-sidebar -->
-
-        
+</div><!-- /.blog-main -->
+<div id="sidebar"></div>
 
       </div><!-- /.row -->
 
+
+<script>get_sidebar()</script>
+<footer id="footer"></footer>
+<script>get_footer()</script>
+
     </div><!-- /.container -->
-
-    <footer class="blog-footer">
-      <p>Blog template built for <a href="http://getbootstrap.com">Bootstrap</a> by <a href="https://twitter.com/mdo">@mdo</a>.<br> Extended by me.</p>
-      <p>
-        <a href="#">Back to top</a>
-      </p>
-    </footer>
-
 
     <!-- Bootstrap core JavaScript
     ================================================== -->
@@ -154,5 +117,6 @@ We'll see where this class ends up going.  Not much here in the way of computati
     <script src="../../dist/js/bootstrap.min.js"></script>
     <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
     <script src="../../assets/js/ie10-viewport-bug-workaround.js"></script>
+
   </body>
 </html>

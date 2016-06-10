@@ -1,0 +1,4 @@
+function get_masthead(){
+    document.getElementById("masthead").innerHTML ="<div class='container blog-masthead'><div class='blog-masthead-insert'><h1 class='blog-title'> Fabled Raven</h1><p class='lead blog-description'>Living in a mostly harmless world</p></div></div>";
+}
+get_masthead();
