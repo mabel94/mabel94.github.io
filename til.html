@@ -20,7 +20,8 @@
     <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
     <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
     <script src="../../assets/js/ie-emulation-modes-warning.js"></script>
-
+    <script src="js/blog.js"></script>
+    
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
       <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
@@ -31,27 +32,12 @@
   <body>
 
 <!-- gray white candy apple yellow -->
-    <div class="container blog-masthead">
-        <div class="blog-masthead-insert">
-            <h1 class="blog-title"> Fabled Raven</h1>
-        
-            <p class="lead blog-description">Living in a mostly harmless world</p>
-            
-        </div>
-    </div>
 
-        <nav class="blog-nav">
-                <div class="container">
-                  <a class="blog-nav-item" href="index.html">Home</a>
-                  <a class="blog-nav-item" href="#">Coding Projects (soon!)</a>
-                  <a class="blog-nav-item" href="#">Social Commentary (soon!)</a>
-                  <a class="blog-nav-item" href="#">Books and Media (soon!)</a>
-                  <a class="blog-nav-item active" href="til.html">Things I like</a>
-                  <a class="blog-nav-item" href="tih.html">Things I hate</a>
-                  <a class="blog-nav-item" href="contact.html">Contact</a>
-                </div>
+    <div id="masthead"></div>
+    <div id="nav"></div>
 
-        </nav>
+    <script>get_masthead(); get_nav("til");</script>
+
     <div class="container">
 
       <div class="row">
@@ -61,7 +47,7 @@
 
 
  <div class="blog-post">
-  <h2 class="blog-post-title">Concentrated Coffee</h2>
+  <h3 class="blog-post-title">Concentrated Coffee</h3>
   <p class="blog-post-meta">February 16, 2016</a></p>
   <p>
   The coffee I drink is getting increasingly more concentrated and bitter.  Yesterday, I switched it up and got a latte from my new haunt, Manndibles in Mann library, but it just didn't quite approach the delicious bitterness of the cappuccino I usually get.  
@@ -71,35 +57,20 @@
 
 <div class="blog-img">
 <img src="src/mac.jpg" alt="macchiato">
-<p>My macchiato from the famous <a href="http://www.manndiblecafe.com/">Manndible Cafe</a> at Cornell</p>
+<p>My macchiato from the famous Ag school cafe. </p>
 </div>
 
 <div class="blog-img">
 <img src="src/cap.jpg" alt="green_planet_cap.jpg">
-<p>The beautiful cappuccino that got me hooked on expensive, elitist cafe drinks from Green Planet Grocery in Cicero, New York.  The cafe area was called <a href="http://www.cafekubal.com/#wholesale">Cafe Kubal</a>.</p>
+<p>The beautiful cappuccino that got me hooked on expensive, elitist cafe drinks from a local cafe. </p>
 </div>
   </p>
  </div>
 
         </div><!-- /.blog-main -->
+<div id="sidebar"></div>
+<script>get_sidebar()</script>
 
-
- <div class="col-sm-3 col-sm-offset-1 blog-sidebar">
-          <div class="sidebar-module sidebar-module-inset">
-            <h4>About This Blog</h4>
-            <p>Documenting my journey through life with computer science and the love of all things controversial</p>
-          </div>
-      
-          <div class="sidebar-module">
-            <h4>Elsewhere</h4>
-            <ol class="list-unstyled">
-              <li><a href="#">Bitbucket</a></li>
-              <li><a href="#">Twitter</a></li>
-              <li><a href="./facebook.html">Facebook</a></li>
-            </ol>
-            <img style="margin-top:10px" src="http://static.fsf.org/nosvn/associate/crm/1090777.png"/>
-          </div>
-        </div><!-- /.blog-sidebar -->
 
         
 
@@ -107,17 +78,16 @@
 
     </div><!-- /.container -->
 
-    <footer class="blog-footer">
-      <p>Blog template built for <a href="http://getbootstrap.com">Bootstrap</a> by <a href="https://twitter.com/mdo">@mdo</a>.<br> Extended by me.</p>
-      <p>
-        <a href="#">Back to top</a>
-      </p>
-    </footer>
+
+<footer id="footer" class="blog-footer"></footer>
+<script>get_footer()</script>
 
 
     <!-- Bootstrap core JavaScript
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
+
+    
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
     <script src="../../dist/js/bootstrap.min.js"></script>
     <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->

@@ -9,8 +9,6 @@ function get_nav(current){
                 <div class="container">
                   <a class="blog-nav-item" id = "home" href="index.html">Home</a>
                   <a class="blog-nav-item" id = "coding projects" href="#">Coding Projects (soon!)</a>
-                  <a class="blog-nav-item" id = "social commentary" href="#">Social Commentary (soon!)</a>
-                  <a class="blog-nav-item" id = "books"  href="#">Books and Media (soon!)</a>
                   <a class="blog-nav-item" id = "til" href="til.html">Things I like</a>
                   <a class="blog-nav-item" id = "tih" href="tih.html">Things I hate</a>
                   <a class="blog-nav-item" id = "contact" href="contact.html">Contact</a>
@@ -58,12 +56,13 @@ function get_sidebar(){
 
 function get_footer(){
     var foot = document.getElementById("footer");
-    foot.className = 'class="blog-footer"'
-    foot.innerHTML=`
+    
    
-      <p>Blog template built for <a href="http://getbootstrap.com">Bootstrap</a> by <a href="https://twitter.com/mdo">@mdo</a>.<br> Extended by me.</p>
-      <p>
-        <a href="#">Back to top</a>
-      </p>
+    foot.innerHTML=`
+ <img class="blog-footer-img" src="src/d.jpg">
+    <p>Blog template built for <a href='http://getbootstrap.com'>Bootstrap</a> by <a href='https://twitter.com/mdo'>@mdo</a>.<br> Extended by me. <br>
+        <a href='#'>Back to top</a>
+	</p>
+
 	`;
 }

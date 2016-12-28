@@ -20,6 +20,7 @@
     <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
     <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
     <script src="../../assets/js/ie-emulation-modes-warning.js"></script>
+    <script src="js/blog.js"></script>
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
@@ -30,28 +31,13 @@
 
   <body>
 
-<!-- gray white candy apple yellow -->
-    <div class="container blog-masthead">
-        <div class="blog-masthead-insert">
-            <h1 class="blog-title"> Fabled Raven</h1>
-        
-            <p class="lead blog-description">Living in a mostly harmless world</p>
-            
-        </div>
-    </div>
+    <!-- gray white candy apple yellow -->
 
-        <nav class="blog-nav">
-                <div class="container">
-                  <a class="blog-nav-item" href="index.html">Home</a>
-                  <a class="blog-nav-item" href="#">Coding Projects (soon!)</a>
-                  <a class="blog-nav-item" href="#">Social Commentary (soon!)</a>
-                  <a class="blog-nav-item" href="#">Books and Media (soon!)</a>
-                  <a class="blog-nav-item" href="til.html">Things I like</a>
-                  <a class="blog-nav-item active" href="#">Things I hate</a>
-                  <a class="blog-nav-item" href="contact.html">Contact</a>
-                </div>
+    <div id="masthead"></div>
+    <div id="nav"></div>
 
-        </nav>
+    <script>get_masthead(); get_nav("tih");</script>
+    
     <div class="container">
 
       <div class="row">
@@ -60,7 +46,7 @@
 
 
  <div class="blog-post">
-  <h2 class="blog-post-title">Dedicated (ie, not attached to a pencil) eraser</h2>
+  <h3 class="blog-post-title">Dedicated (ie, not attached to a pencil) eraser</h3>
   <p class="blog-post-meta">February 16, 2016</a></p>
     <p>
 
@@ -71,7 +57,7 @@
 
 
  <div class="blog-post">
-  <h2 class="blog-post-title">The so-called "latte"</h2>
+  <h3 class="blog-post-title">The so-called "latte"</h3>
   <p class="blog-post-meta">January 26, 2016</a></p>
     <p>
     Fast food coffee shops such as Dunkin Donuts, Tim Hortons, and Starbucks have massacred the deliciousness of the latte and cappuccino.  As warm beverages of all types are a source of comfort in my life, I have become somewhat elitist regarding their quality.  To wit, I now believe that "latte" should not mean "heated milk with coffee-flavored syrup dissolved in a cup of sugar."
@@ -80,36 +66,17 @@
 
         </div><!-- /.blog-main -->
 
+<div id="sidebar"></div>
+<script>get_sidebar()</script>
 
- <div class="col-sm-3 col-sm-offset-1 blog-sidebar">
-          <div class="sidebar-module sidebar-module-inset">
-            <h4>About This Blog</h4>
-            <p>Documenting my journey through life with computer science and the love of all things controversial</p>
-          </div>
-      
-          <div class="sidebar-module">
-            <h4>Elsewhere</h4>
-            <ol class="list-unstyled">
-              <li><a href="#">Bitbucket</a></li>
-              <li><a href="#">Twitter</a></li>
-              <li><a href="./facebook.html">Facebook</a></li>
-            </ol>
-            <img style="margin-top:10px" src="http://static.fsf.org/nosvn/associate/crm/1090777.png"/>
-          </div>
-        </div><!-- /.blog-sidebar -->
 
-        
 
       </div><!-- /.row -->
 
     </div><!-- /.container -->
 
-    <footer class="blog-footer">
-      <p>Blog template built for <a href="http://getbootstrap.com">Bootstrap</a> by <a href="https://twitter.com/mdo">@mdo</a>.<br> Extended by me.</p>
-      <p>
-        <a href="#">Back to top</a>
-      </p>
-    </footer>
+<footer id="footer" class="blog-footer"></footer>
+<script>get_footer()</script>
 
 
     <!-- Bootstrap core JavaScript
