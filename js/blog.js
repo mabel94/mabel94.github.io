@@ -66,3 +66,11 @@ function get_footer(){
 
 	`;
 }
+
+function add_article(file){
+    var imported = document.createElement('article');
+    imported.src = '../articles/'.concat(file);
+    var thing = document.getElementById('thing');
+    thing.innerHTML=imported.src;
+    document.head.appendChild(imported);
+}
