@@ -67,6 +67,7 @@ function get_footer(){
 	`;
 }
 
+/*
 function add_article(file){
     var imported = document.createElement('article');
     imported.src = '../articles/'.concat(file);
@@ -74,3 +75,4 @@ function add_article(file){
     thing.innerHTML=imported.src;
     document.head.appendChild(imported);
 }
+*/
