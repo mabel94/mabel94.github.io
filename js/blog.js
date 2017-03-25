@@ -29,7 +29,7 @@ function get_sidebar(){
  <div class="col-sm-3 col-sm-offset-1 blog-sidebar">
           <div class="sidebar-module sidebar-module-inset">
             <h4>About This Blog</h4>
-            <p>Documenting my journey through life with computer science and the love of all things controversial</p>
+            <p>I'm the kind of person who drinks flat diet coke from the bottle while listening to 16 bit lolitas</p>
           </div>
       
           <div class="sidebar-module">
